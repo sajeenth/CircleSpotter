@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en" oncontextmenu = "return false;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <title>CircleSpotter</title>
+  </head>
+
+  <body >
+    <div class="header">
+      <h1>Welcome to CircleSpotter</h1>
+      <h3>Try Finding the Circle!</h3>
+    </div>
+    <div class="countdown">
+      <h2 id="count">3</h2>
+      <h2 id="gameover">Gameover</h2>
+      <h2 id="win">Congratulations You Found It</h2>
+    </div>
+    <p id="q1a"></p>
+    <p id="q2a"></p>
+    <div class="popup" id="popup">
+      <div class="box"></div>
+      <div class="content">
+        <div class="close">&times;</div>
+        <p id="p_instruct">
+          An invisible circle is located somewhere on the screen. Your job is to
+          locate that circle using the hints provided or sheer luck. Good Luck!
+        </p>
+      </div>
+      <div class="hint1_content">
+        <div class="close1">&times;</div>
+        <h1 id="p_hint1">
+          Hint 1 - X-Coordinate
+        </h1>
+        <p id="q1"></p>
+        <div class="wrapper">
+          <div class="input-data">
+            <input id="ans" type="text" autocomplete="off">
+          </div>
+          <div class="subm">
+            <input id="sub" type="submit" value="Submit">
+          </div>
+        </div>
+      </div>
+      <div class="hint2_content">
+        <div class="close2">&times;</div>
+        <h1 id="p_hint2">
+          Hint 2 - Y-Coordinate
+        </h1>
+        <p id="q2"></p>
+        <div class="wrapper">
+          <div class="input-data">
+            <input id="ans2" type="text" autocomplete="off">
+          </div>
+          <div class="subm">
+            <input id="sub2" type="submit" value="Submit">
+          </div>
+        </div> 
+      </div>
+      <div class="hint3_content">
+        <div class="close3">&times;</div>
+        <h1 id="p_hint3">
+          Hint 3 - # of Digits in X and Y
+        </h1>
+        <p id="q3"></p>
+        <div class="wrapper">
+          <div class="input-data">
+            <input id="ans3" type="text" autocomplete="off">
+          </div>
+          <div class="subm">
+            <input id="sub3" type="submit" value="Submit">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="container">
+      <button class="buttons" id="instructions">Instructions</button>
+      <div class="dropdown">
+        <button class="buttons" id="level">Choose a Level</button>
+        <div class="lvl-buttons">
+          <a href="#" id="easy">Easy</a>
+          <a href="#" id="medium">Medium</a>
+          <a href="#" id="hard">Hard</a>
+        </div>
+      </div>
+    </div>
+    <div id="coordinates"></div>
+    <div class="clicks">
+      <h4>Past Clicks:</h4>
+      <ul id="click" style="list-style-type: none"></ul>
+    </div>
+    <div class="buttons center">
+      <button id="replay" onclick="location.reload()">Play Again</button>
+    </div>
+    <div class="circle">
+      <button id="circle_button"></button>
+    </div>
+
+    <div class="hints_dropdown dropdown">
+      <button class="hints" id="help">Hints</button>
+      <div class="hint-buttons">
+        <a href="#" id="hint1">1</a>
+        <a href="#" id="hint2">2</a>
+        <a href="#" id="hint3">3</a>
+      </div>
+    </div>
+    <div class="sound">
+      <img id="mus" src="mute.png" alt="Mute" width="40px">
+  </body>
+</html>
