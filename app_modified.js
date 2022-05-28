@@ -1,4 +1,4 @@
-// For the purpose of game integrity, some functions are not included in the file to keep it fair for everyone.
+// For the purpose of game integrity, some functions are not included in the file to keep it fair for everyone. Please contact me if you would like the original file.
 
 let num = 0;
 let temp = 0;
